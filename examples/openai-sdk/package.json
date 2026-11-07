@@ -1,0 +1,16 @@
+{
+  "name": "routera-openai-sdk-example",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Minimal Node OpenAI SDK client for RouterA hosted API",
+  "scripts": {
+    "start": "node chat.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "openai": "^4.73.0"
+  }
+}

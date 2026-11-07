@@ -1,0 +1,50 @@
+name: Bug report
+description: Something wrong with these examples or the hosted RouterA API from a sample
+title: "[bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do **not** paste API keys or secrets.
+        Prefer reproducing with the scripts under `examples/`.
+  - type: dropdown
+    id: environment
+    attributes:
+      label: Environment
+      options:
+        - routera.ai (hosted)
+        - examples only (docs / scripts)
+        - other
+    validations:
+      required: true
+  - type: input
+    id: api
+    attributes:
+      label: API / example path
+      description: e.g. /v1/chat/completions or examples/curl/chat-completions.sh
+      placeholder: /v1/chat/completions
+    validations:
+      required: true
+  - type: input
+    id: model
+    attributes:
+      label: Model name (no keys)
+      placeholder: deepseek-chat
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual
+    validations:
+      required: true
+  - type: input
+    id: when
+    attributes:
+      label: When (Asia/Shanghai preferred)
+      placeholder: 2026-11-07 16:00 Asia/Shanghai

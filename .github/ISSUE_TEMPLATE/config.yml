@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: RouterA product / signup
+    url: https://routera.ai
+    about: Create an account, get an API key, and use the hosted console.
